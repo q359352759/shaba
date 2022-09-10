@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html>
-<title>世界杯</title>
+
 <head>
-	<link rel="stylesheet" href="style/index.css">
+	<title>世界杯</title>
+	<link rel="stylesheet" href="style/index.css" />
 </head>
+
 <body>
 	<div id="vue">
+		写入token
+		<input type="text" v-model="access_token" name="" id="">
+		<button @click="init()">开始</button>
+
+		<section class="视频">视频 需要网关接口才能实现</section>
+
+		<section class="投注">
+			<div class="left">
+				<h3>开球时间 {{选中.globalShowTime}}</h3>
+				<div class="teamInfo">
+					<div>
+						<img :src="选中.teamInfo?.homeIconUrl" alt="" srcset="">
+						<b>{{选中.teamInfo?.homeName}}</b>
+					</div>
+					<div>vs</div>
+					<div>
+						<img :src="选中.teamInfo?.awayIconUrl" alt="" srcset="">
+						<b>{{选中.teamInfo?.awayName}}</b>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div v-if="mark.selections.length==0">没有相关赔率</div>
+				<ul v-else class="赔率">
+					<li v-for="item in mark.selections">
+						<div class="">{{ checkedType.投注选项[item.key]() }}</div>
+						<div>串关 {{item.oddsPrice.parlayPrice}}</div>
+						<div>马来 {{item.oddsPrice.malayPrice}}</div>
+						<div>香港 {{item.oddsPrice.hongKongPrice}}</div>
+						<div>欧洲 {{item.oddsPrice.decimalPrice}}</div>
+						<div>印度尼西亚 {{item.oddsPrice.indoPrice}}</div>
+						<div>美国 {{item.oddsPrice.americanPrice}}</div>
+					</li>
+				</ul>
+				<div>
+					<input type="text">
+					<button>下注</button>
+				</div>
+			</div>
+		</section>
+
+		<section class="选盘">
+			<select v-model="WorldCup" @change="changeQuery">
+				<option :value="true">世界杯</option>
+				<option :value="false">所有足球</option>
+			</select>
+			<select v-model="isLive" @change="changeQuery">
+				<option :value="true">滚球</option>
+				<option :value="false">非滚球</option>
+			</select>
+			<select name="" v-model="bettypeId" @change="changeBetType">
+				<option v-for="(item,index) in bettypeList" :value="item.i" :key="index">{{item.name}}</option>
+			</select>
+		</section>
+
+		<ul class="list">
+			<li v-for="(item,index) in events" :key="index">
+				<span class="time">{{item.globalShowTime}}</span>
+				<div class="队伍">
+					<h4>{{item.leagueName}}</h4>
+					<div >
+						<img :src="item.teamInfo?.homeIconUrl" alt="" srcset="">
+						<b>{{item.teamInfo?.homeName}}</b>
+						vs
+						<b>{{item.teamInfo?.awayName}}</b>
+						<img :src="item.teamInfo?.awayIconUrl" alt="" srcset="">
+					</div>
+				</div>
+				<button @click="选中=item" :class="{active:选中.eventId==item.eventId}">未选定</button>
+			</li>
+		</ul>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-	<script src="index.js"></script>
+	<script src="index.js" type="application/javascript"></script>
 </body>
+
 </html>
