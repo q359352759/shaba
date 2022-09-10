@@ -4,6 +4,7 @@ var app = new Vue({
     el: '#vue',
     data() {
         return {
+            // https://www.sojson.com/http/test.html
             user: {
                 "vendor_id": "a3wdhhlalp",
                 "vendor_member_id": "HJCdtestrnd04"
