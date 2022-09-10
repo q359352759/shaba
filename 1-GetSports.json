@@ -1,0 +1,173 @@
+{
+    "payload": {
+        "sports": {
+            "add": [
+                {
+                    "sportType": 1,
+                    "sportName": "足球",
+                    "liveGameCount": 23,
+                    "gameCount": 1362,
+                    "parlayGame": 659,
+                    "outrightGame": 128
+                },
+                {
+                    "sportType": 2,
+                    "sportName": "篮球",
+                    "liveGameCount": 9,
+                    "gameCount": 186,
+                    "parlayGame": 61,
+                    "outrightGame": 31
+                },
+                {
+                    "sportType": 3,
+                    "sportName": "美式足球",
+                    "liveGameCount": 1,
+                    "gameCount": 19,
+                    "parlayGame": 18,
+                    "outrightGame": 1
+                },
+                {
+                    "sportType": 4,
+                    "sportName": "冰上曲棍球",
+                    "liveGameCount": 0,
+                    "gameCount": 28,
+                    "parlayGame": 7,
+                    "outrightGame": 1
+                },
+                {
+                    "sportType": 5,
+                    "sportName": "网球",
+                    "liveGameCount": 5,
+                    "gameCount": 63,
+                    "parlayGame": 28,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 6,
+                    "sportName": "排球",
+                    "liveGameCount": 3,
+                    "gameCount": 20,
+                    "parlayGame": 0,
+                    "outrightGame": 1
+                },
+                {
+                    "sportType": 8,
+                    "sportName": "棒球",
+                    "liveGameCount": 5,
+                    "gameCount": 14,
+                    "parlayGame": 18,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 10,
+                    "sportName": "高尔夫球",
+                    "liveGameCount": 0,
+                    "gameCount": 51,
+                    "parlayGame": 44,
+                    "outrightGame": 3
+                },
+                {
+                    "sportType": 11,
+                    "sportName": "赛车",
+                    "liveGameCount": 0,
+                    "gameCount": 10,
+                    "parlayGame": 2,
+                    "outrightGame": 3
+                },
+                {
+                    "sportType": 14,
+                    "sportName": "水球",
+                    "liveGameCount": 0,
+                    "gameCount": 4,
+                    "parlayGame": 0,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 16,
+                    "sportName": "拳击",
+                    "liveGameCount": 0,
+                    "gameCount": 19,
+                    "parlayGame": 18,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 18,
+                    "sportName": "乒乓球",
+                    "liveGameCount": 3,
+                    "gameCount": 273,
+                    "parlayGame": 0,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 24,
+                    "sportName": "手球",
+                    "liveGameCount": 0,
+                    "gameCount": 63,
+                    "parlayGame": 0,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 25,
+                    "sportName": "飞镖",
+                    "liveGameCount": 0,
+                    "gameCount": 16,
+                    "parlayGame": 16,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 26,
+                    "sportName": "橄榄球",
+                    "liveGameCount": 0,
+                    "gameCount": 41,
+                    "parlayGame": 18,
+                    "outrightGame": 2
+                },
+                {
+                    "sportType": 33,
+                    "sportName": "自行车",
+                    "liveGameCount": 0,
+                    "gameCount": 7,
+                    "parlayGame": 0,
+                    "outrightGame": 1
+                },
+                {
+                    "sportType": 43,
+                    "sportName": "电子竞技",
+                    "liveGameCount": 8,
+                    "gameCount": 115,
+                    "parlayGame": 5,
+                    "outrightGame": 2
+                },
+                {
+                    "sportType": 44,
+                    "sportName": "泰拳",
+                    "liveGameCount": 0,
+                    "gameCount": 12,
+                    "parlayGame": 0,
+                    "outrightGame": 0
+                },
+                {
+                    "sportType": 56,
+                    "sportName": "乐透",
+                    "liveGameCount": 0,
+                    "gameCount": 8,
+                    "parlayGame": 0,
+                    "outrightGame": 3
+                },
+                {
+                    "sportType": 99,
+                    "sportName": "其他",
+                    "liveGameCount": 0,
+                    "gameCount": 11,
+                    "parlayGame": 7,
+                    "outrightGame": 0
+                }
+            ],
+            "change": [],
+            "remove": []
+        }
+    },
+    "queryTime": 1662780700240,
+    "responseTime": 1662780700291,
+    "status": 1
+}

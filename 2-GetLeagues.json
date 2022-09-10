@@ -1,0 +1,22 @@
+{
+    "payload": {
+        "leagues": {
+            "add": [
+                {
+                    "leagueId": 110287,
+                    "leagueName": "2022世界杯 (在卡塔尔)",
+                    "sportType": 1,
+                    "sportName": "足球",
+                    "liveGameCount": 0,
+                    "gameCount": 32,
+                    "isParlay": false
+                }
+            ],
+            "change": [],
+            "remove": []
+        }
+    },
+    "queryTime": 1662782144306,
+    "responseTime": 1662782144316,
+    "status": 1
+}
