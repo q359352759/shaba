@@ -4,6 +4,7 @@ var app = new Vue({
     el: '#vue',
     data() {
         return {
+            // https://github.com/Saba-sports/OddsDirectAPI_CN/wiki/GetStreaming
             // https://www.sojson.com/http/test.html
             user: {
                 "vendor_id": "a3wdhhlalp",

@@ -8,6 +8,17 @@
 
 <body>
 	<div id="vue">
+		获取token <a href="https://www.sojson.com/http/test.html">https://www.sojson.com/http/test.html</a>
+		<br>
+		参数
+		<br>
+		url  https://api.wx7777.com/login
+		<br>
+		{
+			"vendor_id": "a3wdhhlalp",
+			"vendor_member_id": "HJCdtestrnd04"
+		}
+		<br>
 		写入token
 		<input type="text" v-model="access_token" name="" id="">
 		<button @click="init()">开始</button>
@@ -76,7 +87,9 @@
 						<img :src="item.teamInfo?.awayIconUrl" alt="" srcset="">
 					</div>
 				</div>
-				<button @click="选中=item" :class="{active:选中.eventId==item.eventId}">未选定</button>
+				<button @click="选中=item" :class="{active:选中.eventId==item.eventId}">
+					{{选中.eventId==item.eventId ? "已选定" : '未选定'}}
+				</button>
 			</li>
 		</ul>
 	</div>
